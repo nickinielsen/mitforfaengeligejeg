@@ -1,0 +1,87 @@
+html, body {
+    display: grid;
+    content: inline-flexbox;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    color: rgba(37, 48, 44, 0.916);
+    background-color: transparent;
+    background: #f1f3f3;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Tinos', serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.page {
+    display: grid;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 70px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 70px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.2), inset 0 0 70px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 5rem;
+}
+
+h1, h2, h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.0rem;
+    font-weight: bolder;
+    color: rgb(65, 35, 17);
+}
+
+h2 {
+    margin-top: 3 .5em;
+    margin-bottom: 0.5em;
+}
+
+.kapitelOverskrift {
+    margin-top: 3.5em;
+    display: -moz-popup;
+}
+
+p {
+    display: inline-block;
+}
+
+.page {
+    background-color: rgba(178, 188, 188, 0.188);
+    box-shadow: 0 25px 30px -2px rgba(7, 7, 7, 0.201);
+    border-radius: 7px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.eBook {
+    display: grid;
+    justify-content: center;
+}
+
+.container {
+    padding: 40px;
+    max-width: 40rem;
+}
+
+p {
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    position: relative;
+    top: -17px;
+}
+
+@media print {
+    html, body, .container, .page {
+        background-color: white;
+        box-shadow: none;
+    }
+    .container {
+        padding: 14px;
+    }
+}
